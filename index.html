@@ -5,74 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catalysts for Civilization</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Fira+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Fira+Mono:wght@700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="logo">⚡ Catalysts for Civilization</div>
+  <div class="cyber-bg"></div>
+  <div class="lightning"></div>
+  <nav class="cyber-nav">
+    <div class="logo"><span>⚡</span> Catalysts for Civilization</div>
     <ul>
-      <li><a href="#home" class="nav-link active">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
+      <li><button class="cyber-btn nav-btn active" data-page="home">Home</button></li>
+      <li><button class="cyber-btn nav-btn" data-page="about">About</button></li>
     </ul>
   </nav>
 
-  <section id="home" class="page active">
-    <div class="dashboard">
-      <h1>Welcome to <span class="team-name">Catalysts for Civilization</span></h1>
-      <h2>Meet the Team</h2>
-      <ul class="team-list">
-        <li>
-          <div class="avatar leader"></div>
-          <div>
-            <span class="member-name">Srimurugan G</span>
-            <span class="role">Team Leader</span>
-          </div>
-        </li>
-        <li>
-          <div class="avatar designer"></div>
-          <div>
-            <span class="member-name">Balaji Sakthivel S</span>
-            <span class="role">Designer</span>
-          </div>
-        </li>
-        <li>
-          <div class="avatar webmaster"></div>
-          <div>
-            <span class="member-name">Arunachalam S</span>
-            <span class="role">Web Master</span>
-          </div>
-        </li>
-        <li>
-          <div class="avatar executor"></div>
-          <div>
-            <span class="member-name">Santhosh P</span>
-            <span class="role">Task Executer</span>
-          </div>
-        </li>
-        <li>
-          <div class="avatar finance"></div>
-          <div>
-            <span class="member-name">Sabapathy Rajan M</span>
-            <span class="role">Financial Officer & Recorder</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <main>
+    <section id="home" class="page active">
+      <div class="dashboard glass-panel">
+        <h1>
+          Welcome to 
+          <span class="team-name">Catalysts for Civilization</span>
+        </h1>
+        <h2>Meet the Team</h2>
+        <ul class="team-list">
+          <li>
+            <div class="avatar leader">SG</div>
+            <div>
+              <span class="member-name">Srimurugan G</span>
+              <span class="role">Team Leader</span>
+            </div>
+          </li>
+          <li>
+            <div class="avatar designer">BS</div>
+            <div>
+              <span class="member-name">Balaji Sakthivel S</span>
+              <span class="role">Designer</span>
+            </div>
+          </li>
+          <li>
+            <div class="avatar webmaster">AS</div>
+            <div>
+              <span class="member-name">Arunachalam S</span>
+              <span class="role">Web Master</span>
+            </div>
+          </li>
+          <li>
+            <div class="avatar executor">SP</div>
+            <div>
+              <span class="member-name">Santhosh P</span>
+              <span class="role">Task Executer</span>
+            </div>
+          </li>
+          <li>
+            <div class="avatar finance">SR</div>
+            <div>
+              <span class="member-name">Sabapathy Rajan M</span>
+              <span class="role">Financial Officer & Recorder</span>
+            </div>
+          </li>
+        </ul>
+        <div class="cta-row">
+          <button class="cyber-btn big-btn glitchy">Join the Movement</button>
+          <button class="cyber-btn big-btn neon-border">Contact Us</button>
+        </div>
+      </div>
+    </section>
 
-  <section id="about" class="page">
-    <div class="about-container">
-      <h1>About Us</h1>
-      <p>
-        We are a passionate group of college students united by our curiosity and drive to make a difference—<strong>Catalysts for Civilization</strong>! Our diverse talents come together to brainstorm, ideate, and dive deep into innovative solutions for real-world challenges as part of our Design Thinking course. Beyond the classroom, we’re building our own digital presence (because, let’s face it, having a website is just plain cool 😎). This is our space to showcase our journey, ideas, and team spirit!
-      </p>
-    </div>
-  </section>
+    <section id="about" class="page">
+      <div class="about-container glass-panel">
+        <h1>About Us</h1>
+        <p>
+          We are a passionate group of college students united by our curiosity and drive to make a difference—<strong>Catalysts for Civilization</strong>! Our diverse talents come together to brainstorm, ideate, and dive deep into innovative solutions for real-world challenges as part of our Design Thinking course.<br><br>
+          Beyond the classroom, we’re building our own digital presence (because, let’s face it, having a website is just plain cool 😎). This is our space to showcase our journey, ideas, and team spirit!
+        </p>
+        <div class="about-actions">
+          <button class="cyber-btn neon-border">Our Vision</button>
+          <button class="cyber-btn neon-border">Our Projects</button>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Catalysts for Civilization &mdash; Made with ❤️
+    <div class="footer-console">
+      <span class="console-blink">▊</span> &copy; 2025 Catalysts for Civilization &mdash; Made with <span class="footer-heart">❤️</span>
+    </div>
   </footer>
 
+  <canvas id="cyber-particles"></canvas>
   <script src="script.js"></script>
 </body>
 </html>
